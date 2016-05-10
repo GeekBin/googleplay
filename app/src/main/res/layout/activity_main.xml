@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tysj="http://schemas.android.com/apk/res-auto">
 
 <!--内容区域-->
     <!--菜单区域left菜单-->
@@ -24,7 +25,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.astuetz.PagerSlidingTabStrip
+    <com.astuetz.PagerSlidingTabStripExtends
+        tysj:pstsIndicatorColor="#6666ff"
+
+        tysj:pstsTabTextSize="14sp"
+        tysj:pstsSelectedTabTextSize="16sp"
+
+        tysj:pstsTabTextColor="#000"
+        tysj:pstsSelectedTabTextColor="#6666ff"
         android:id="@+id/main_tabs"
         android:layout_width="match_parent"
         android:layout_height="48dip" />

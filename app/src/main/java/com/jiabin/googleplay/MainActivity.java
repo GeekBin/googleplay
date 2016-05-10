@@ -11,7 +11,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-import com.astuetz.PagerSlidingTabStrip;
+import com.astuetz.PagerSlidingTabStripExtends;
 import com.jiabin.googleplay.factory.FragmentFactory;
 import com.jiabin.googleplay.utils.UIUtils;
 
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private ActionBar mActionBar;
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
-    private PagerSlidingTabStrip mPagerSlidingTabStrip;
+    private PagerSlidingTabStripExtends mPagerSlidingTabStrip;
     private ViewPager mViewPager;
     private String[] mMainTitleArr;
 
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
 
-        mPagerSlidingTabStrip = (PagerSlidingTabStrip) findViewById(R.id.main_tabs);
+        mPagerSlidingTabStrip = (PagerSlidingTabStripExtends) findViewById(R.id.main_tabs);
         mViewPager = (ViewPager) findViewById(R.id.main_viewpager);
 
         //1.同步状态
